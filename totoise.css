@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.tortoise {
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(circle at 50% 50%, #000, #fff 50%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.tortoise::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  top: 40px;
+  left: 40px;
+}
+
+.tortoise::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  top: 45px;
+  left: 45px;
+}
